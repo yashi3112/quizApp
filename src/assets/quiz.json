@@ -1,0 +1,189 @@
+{
+    "total": 3,
+    "quizes": [{
+        "id": 1,
+        "name": "Angular Questions",
+        "total": 4,
+        "questions": [{
+            "id": 1,
+            "name": "Which is the example of correct structure directive?",
+            "correctAnswer": 3,
+            "options": [{
+                "name": "ngStyle",
+                "value": 1
+            }, {
+                "name": "ngClass",
+                "value": 2
+            }, {
+                "name": "*ngIf",
+                "value": 3
+            }, {
+                "name": "None of Above",
+                "value": 4
+            }]
+        }, {
+            "id": 2,
+            "name": "How to communicate Child to Parent?",
+            "correctAnswer": 1,
+            "options": [{
+                "name": "@Output()",
+                "value": 1
+            }, {
+                "name": "@Input()",
+                "value": 2
+            }, {
+                "name": "@ViewChild()",
+                "value": 3
+            }, {
+                "name": "EventEmitter()",
+                "value": 4
+            }]
+        }, {
+            "id": 3,
+            "name": "How to communicate between Sibling Component?",
+            "correctAnswer": 4,
+            "options": [{
+                "name": "@Output()",
+                "value": 1
+            }, {
+                "name": "@Input()",
+                "value": 2
+            }, {
+                "name": "@ViewChild()",
+                "value": 3
+            }, {
+                "name": "EventEmitter()",
+                "value": 4
+            }]
+        }, {
+            "id": 4,
+            "name": "Which among below is not a part of Angular Life Cycle?",
+            "correctAnswer": 4,
+            "options": [{
+                "name": "ngOnInit()",
+                "value": 1
+            }, {
+                "name": "ngOnChanges()",
+                "value": 2
+            }, {
+                "name": "ngAfterViewInit()",
+                "value": 3
+            }, {
+                "name": "ngBeforeViewInit()",
+                "value": 4
+            }]
+        }]
+    }, {
+        "id": 2,
+        "name": "Javascript Questions",
+        "total": 3,
+        "questions": [{
+            "id": 1,
+            "name": "If let a = 5; let b = '5'. comparing a == b & a === b What will be the correct Answer?",
+            "correctAnswer": 1,
+            "options": [{
+                "name": "true & false",
+                "value": 1
+            }, {
+                "name": "true & true",
+                "value": 2
+            }, {
+                "name": "false & true",
+                "value": 3
+            }, {
+                "name": "false & false",
+                "value": 4
+            }]
+        }, {
+            "id": 2,
+            "name": "What is the difference between 'display': none and 'visibility': hidden?",
+            "correctAnswer": 2,
+            "options": [{
+                "name": "No difference both are same.",
+                "value": 1
+            }, {
+                "name": "display: none will not occupy any memory, visibility will occupy memory.",
+                "value": 2
+            }, {
+                "name": "display: none will hide the element. visibility: hidden will not hide element",
+                "value": 3
+            }, {
+                "name": "display: none will not hide the element. visibility: hidden not hide element",
+                "value": 4
+            }]
+        }, {
+            "id": 3,
+            "name": "const set2 = new Set(['a','b','c','d','d','e']); console.log(set2); What will be output.",
+            "correctAnswer": 4,
+            "options": [{
+                "name": "['a', 'b', 'c', 'd', 'd', 'e']",
+                "value": 1
+            }, {
+                "name": "['d', 'd']",
+                "value": 2
+            }, {
+                "name": "['a', 'b', 'c', 'd']",
+                "value": 3
+            }, {
+                "name": "['a', 'b', 'c', 'd', 'e']",
+                "value": 4
+            }]
+        }]
+    }, {
+        "id": 3,
+        "name": "PHP Questions",
+        "total": 3,
+        "questions": [{
+            "id": 1,
+            "name": "What are the differences between PHP constants and variables?",
+            "correctAnswer": 3,
+            "options": [{
+                "name": "There is no need to write a dollar sign ($) before a constant, where as in Variable one has to write a dollar sign.",
+                "value": 1
+            }, {
+                "name": "Constants cannot be defined by simple assignment, they may only be defined using the define() function.",
+                "value": 2
+            }, {
+                "name": "All of above",
+                "value": 3
+            }, {
+                "name": "none of above",
+                "value": 4
+            }]
+        }, {
+            "id": 2,
+            "name": "How will you concatenate two strings in PHP? $string1 = 'Hello World'' $string2 = '1234';",
+            "correctAnswer": 1,
+            "options": [{
+                "name": "echo $string1 . ' ' . $string2;",
+                "value": 1
+            }, {
+                "name": "echo $string1 + $string2;",
+                "value": 2
+            }, {
+                "name": "All of Above",
+                "value": 3
+            }, {
+                "name": "None of Above",
+                "value": 4
+            }]
+        }, {
+            "id": 3,
+            "name": "How will you find the length of a string in PHP?",
+            "correctAnswer": 3,
+            "options": [{
+                "name": "echo 'Hello world!'.length;",
+                "value": 1
+            }, {
+                "name": "echo strlength('Hello world!');",
+                "value": 2
+            }, {
+                "name": "echo strlen('Hello world!');",
+                "value": 3
+            }, {
+                "name": "echo stringlen('Hello world!');",
+                "value": 4
+            }]
+        }]
+    }]
+}
