@@ -1,28 +1,17 @@
 <div class="container text-center mb-5">
-    <h1>Welcome to Angular Quiz</h1>
-    <h3>1. Question?</h3>
+    <h1>Welcome to {{courseList?.name}} Quiz</h1>
+    <h3>{{courseList?.questions[activeIndex]?.id}}. {{courseList?.questions[activeIndex]?.name}}</h3>
 
     <ul class="list-group text-left" style="max-width: 500px; margin: auto;">
         <li class="list-group-item active d-flex align-items-center">
             <span class="d-flex-inline flex-fill">Select the Option</span>
-            <button class="btn btn-danger">Finish</button>
+            <button class="btn btn-danger" routerLink="/result">Finish</button>
         </li>
-        <li class="list-group-item d-flex align-items-center">
-            <span class="d-flex-inline flex-fill"> Option 1</span>
-            <button class="btn btn-warning">Select</button>
+        <li class="list-group-item d-flex align-items-center" *ngFor="let x of options">
+            <span class="d-flex-inline flex-fill"> {{x.name}}</span>
+            <button class="btn btn-warning" (click)="onSelect(x)">Select</button>
         </li>
-        <li class="list-group-item d-flex align-items-center">
-            <span class="d-flex-inline flex-fill"> Option 2</span>
-            <button class="btn btn-warning">Select</button>
-        </li>
-        <li class="list-group-item d-flex align-items-center">
-            <span class="d-flex-inline flex-fill"> Option 3</span>
-            <button class="btn btn-warning">Select</button>
-        </li>
-        <li class="list-group-item d-flex align-items-center">
-            <span class="d-flex-inline flex-fill"> Option 4</span>
-            <button class="btn btn-warning">Select</button>
-        </li>
+      
     </ul>
 
     <h6 style="max-width: 500px;margin: auto;">Note: Clicking on finish will end the test. Selecting option will record

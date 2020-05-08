@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 
 @Injectable({
@@ -7,10 +8,14 @@ import { HttpClient } from '@angular/common/http';
 })
 export class QuizService {
 
+  public result={
+    total:0,
+    correct:0
+  };
   constructor(private quizService : HttpClient) { }
 
-  getQuestions(courseID:number)
+  getQuestions():Observable<any>
   {
-    return this.quizService.get('./assets/birds.json'+courseID);
+    return this.quizService.get('/assets/quiz.json');
   }
 }
